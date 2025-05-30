@@ -1,0 +1,890 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;}
+
+img {
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	font-family: "Noto Sans TC", sans-serif;
+	font-weight: 500;
+	background-color: #fbfbfb;
+}
+
+.container {
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 12px;
+  }
+
+h2 {
+	font-size: 64px;
+	font-weight: 700;
+}
+  
+h3 {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+p{
+margin-bottom: 1rem;
+}
+
+.text-primary {
+	color: #0027d5;
+}
+
+.text-gray {
+	color: #4b4b4b;
+}
+
+.fw-bold {
+	font-weight: 700;
+}
+
+.fw-black {
+	font-weight: 900;
+}
+
+.ellipsis-mutiple {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+  }
+
+
+
+
+
+  .header {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	background-color: #fff; 
+	padding: 24px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  }
+
+
+.header ul{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header ul li{
+	font-size: 28px;
+	font-weight: bold;
+	margin: 24px;
+}
+
+.banner{
+	display: flex;
+}
+
+.banner-img{
+	width: 50%;
+}
+
+.banner-intro{
+	width: 50%;
+	padding: 0 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.banner-intro .banner-title {
+	font-size: 90px;
+}
+
+.banner-intro .banner-subtitle {
+	font-size: 28px;
+}
+
+.banner-desc{
+	width: 56%;
+	font-size: 28px;
+	padding: 40px 80px;
+	margin-right: 80px;
+	margin-left: auto;
+	background-color: white;
+	position: relative;
+	right: 0;
+	bottom: 160px;
+}
+
+.banner-desc ul {
+	display: flex;
+	margin-top: 10px;
+
+}
+
+.social-icon{
+	display: block;
+}
+
+.social-icon:hover{
+	opacity: 0.8;
+}
+
+.services {
+	padding: 80px 0;
+  }
+
+.services-title{
+	margin-bottom: 40px;
+}
+
+.services-list{
+padding: 0 110px;
+}
+
+.services .list-item{
+	display: flex;
+	align-items: center;
+	margin-bottom: 80px;
+}
+
+.list-img {
+	width: 59.1%;
+	margin-right: -40px;
+  }
+
+.list-text {
+	position: relative;
+	z-index: 1;
+	width: calc(40.9% + 40px);
+	padding: 24px;
+	background: white;
+  }
+
+  .list-title {
+	font-size: 28px;
+	margin-bottom: 8px;
+  }
+
+  .list-item-reverse {
+	flex-direction: row-reverse;
+  }
+
+  .list-item-reverse .list-img {
+	margin-left: -40px;
+  }
+
+  .services-contact{
+	display: flex;
+	justify-content: flex-end;
+  }
+
+  .services-btn{
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	border:1px solid #000000;
+	position: relative;
+  }
+
+  .services-btn::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	transform: translate(-40%, -40%) rotate(-45deg);
+	width: 0.5rem;
+	height: 0.5rem;
+	border: solid black;
+	border-width: 0 1px 1px 0;
+  }
+
+  .services-btn:hover{
+	background-color: #ececec;
+  }
+
+  .services-contact h3{
+	font-weight: 400;
+  }
+
+  .btn {
+	padding: 8px 16px;
+	border: solid 1px #000;
+	border-radius: 80px;
+	color: #4b4b4b;
+	transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+	background: #000;
+	color: white;
+  } 
+
+  .btn-primary {
+	border: solid 1px #0027d5;
+	color: #0027d5;
+	background: white;
+  }
+  
+  .btn-primary:hover {
+	background-color: #0027d5;
+	color: white;
+  }
+
+  .feature-title{
+	margin-bottom: 40px;
+  }
+
+  .blog-feature {
+	padding: 80px 0;
+  }
+  
+
+  /*swiper輪播套件設定*/
+  .feature-wrapper {
+	position: relative;
+  }
+  
+  .blog-feature.swiper {
+	overflow: hidden;
+  }
+  
+  .blog-feature .swiper-wrapper {
+	overflow: visible;
+  }
+  
+  .blog-feature .slider-btn {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #0027d5;
+	padding: 0 10px;
+  }
+  
+  .blog-feature .slider-btn-prev {
+	left: -64px;
+  }
+  
+  .blog-feature .slider-btn-next {
+	right: -64px;
+  }
+  
+  .blog-feature .swiper-button-disabled {
+	color: #b2bef2;
+  }
+
+
+.card time {
+	margin-bottom: 4px;
+  }
+
+.card-head{
+ margin-bottom: 16px; 
+}
+
+.card-head img{
+	width: 100%;
+	margin-bottom: 16px;  
+	vertical-align: middle
+}
+
+
+.card .hashtag{
+font-size: 24px;
+  color: #0027d5;
+}
+
+.card .hashtag a {
+	margin-right: 8px;
+  }
+
+  .card .card-desc {
+	margin-bottom: 16px;
+	margin-top: 10px;
+  }
+
+
+.badge {
+	display: inline-block;
+	padding: 6px 12px;
+	border-radius: 80px;
+	font-weight: 700;
+	background: #0027d5;
+	color: white;
+	font-size: 16px;
+  }
+
+  .case{
+	margin-top: 50px;
+  }
+
+  .case h2{
+	margin-bottom: 40px;
+  }
+
+
+.case-wrapper{
+	display: flex;
+	justify-content: center;	
+}
+
+.case-img{
+	background-color: #fff;
+  }
+
+  .case-img {
+	width: 57.48%;
+	padding: 24px;
+	background: #ededed;
+  }
+
+  .case-desc {
+	width: 42.4%;
+  }
+
+  .case-desc-top {
+	width: calc(100% - 24px);
+	margin-left: -219px;
+	margin-right: 219px;
+	background: white;
+  }
+
+  .case-desc-bottom {
+	background: #f5f5f5;
+	margin-top: -40px;
+	margin-left: 24px;
+	
+  }
+
+.case-desc-top,.case-desc-bottom {
+  padding: 80px 40px;
+}
+
+.case-desc-top .bi,.case-desc-bottom .bi {
+  margin-bottom: 24px;
+}
+
+.case-desc-bottom p {
+  margin-bottom: 24px;
+}
+
+.case-list{
+	margin-top: 40px;
+}
+.case-list-img{
+	width: 100%;
+}
+
+.list-show{
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	gap:1.5rem;
+	background-color: #ededed;
+}
+
+.case-list-title{
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.case-list-body ul {
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid gray;
+	
+  }
+
+.case-list-body ul li {
+	display: flex;
+	position: relative;
+	font-weight: 400;
+
+  }
+  
+  .case-list-body .box {
+    position: relative;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    margin-top: .25rem;
+    margin-right: .25rem;
+    background-color: #0027d5;
+  }
+  
+  .case-list-body .box:after {
+	content: "";
+	position: absolute;
+	left: 5px;
+	top: 2px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+  }
+  
+.case-cta{
+	display: inline-block;
+	padding: 8px 16px;
+	border: solid 1px #000;
+	border-radius: 80px;
+	color: #4b4b4b;
+	transition: all 0.3s ease;
+	background-color: #fff;
+  }
+  
+.case-cta:hover {
+	background: #000;
+	color: white;
+  } 
+
+  .subscription {
+	padding: 80px 0;
+  }
+  
+  .subscription-wrapper {
+	display: flex;
+	width: 100%; 
+  }
+  
+  .subscription-img {
+	width: 50%;
+  }
+  
+
+  .subscription-content {
+	width: 50%;
+	padding: 40px;
+	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/index/Hero%20Section2.png?raw=true);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+  
+.newsletter-block {
+	background-color: #fff;
+	padding: 40px;
+	width: 90%;
+  }
+
+  .newsletter-block h2 {
+	font-size: 64px;
+  }
+  
+  .newsletter-block p {
+	font-size: 16px;
+	margin-bottom: 24px;
+	color: #333;
+  }
+  
+  .newsletter-block .row {
+	margin-bottom: 16px;
+	
+  }
+  
+  .newsletter-block input[type="text"] {
+	width: 100%;
+	padding: 12px;
+	font-size: 16px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+  }
+  
+  
+  
+  .contact {
+	padding: 80px 0;
+	background-color: #f9f9f9;
+  }
+  
+  .contact h2 {
+	margin-bottom: 20px;
+  }
+  
+  .contact p {
+	margin-bottom: 24px;
+  }
+  
+  .email-link {
+	font-weight: bold;
+  }
+  
+  .contact-list {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+  }
+  
+  .contact-list li {
+	border-bottom: 1px solid #333;
+	padding-bottom: 10px;
+  }
+  
+  .contact-list a {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+	padding: 12px 0;
+	color: #000;
+  }
+  
+  .contact-list a i {
+	margin-right: 12px;
+	color: #0027d5;
+	font-size: 24px;
+  }
+  
+  .contact-list .arrow {
+	font-size: 24px;
+	color: #000;
+  }
+  
+  .contact-list a:hover .arrow {
+	transform: translateX(4px);
+  }
+  
+.link-text{
+	font-size: 1.75rem;
+	font-weight: normal;
+}
+
+.contact-list a:hover .link-text,
+.contact-list a:hover .arrow {
+  color: #b2bef2;
+}
+
+.link-text, .arrow {
+	transition: color 0.2s ease;
+  }
+  
+  .site-footer {
+	padding: 40px 0 0;
+	text-align: center;
+	font-size: 14px;
+	color: #555;
+	border-top: 1px solid #ddd;
+
+  }
+  
+
+
+/* 手機版（寬度小於等於767px） */
+@media (max-width: 767px) {
+	.banner {
+	  flex-direction: column;
+	}
+  
+	.banner-img,
+	.banner-intro {
+	  width: 100%;
+	  padding: 20px;
+	}
+  
+	.banner-desc {
+	  width: 90%;
+	  font-size: 16px;
+	  padding: 20px;
+	  margin: 0 auto;
+	  position: static;
+	}
+  
+	.services-list {
+	  padding: 0 20px;
+	}
+  
+	.services .list-item {
+	  flex-direction: column;
+	}
+  
+	.list-img,
+	.list-text {
+	  width: 100%;
+	  margin: 0;
+	}
+  
+	.subscription-wrapper {
+	  flex-direction: column;
+	}
+  
+	.subscription-img,
+	.subscription-content {
+	  width: 100%;
+	  padding: 20px;
+	}
+  
+	.newsletter-block h2 {
+	  font-size: 36px;
+	}
+  
+  
+	.case-wrapper {
+	  flex-direction: column;
+	}
+  
+	.case-img,
+	.case-desc {
+	  width: 100%;
+	}
+  
+	.list-show {
+	  flex-direction: column;
+	}
+  }
+  
+/* 手機（小於768px） */
+@media (max-width: 767px) {
+	.banner {
+		flex-direction: column;
+	  }
+	
+	  .banner-img {
+		width: 100%;
+	  }
+	
+	  .banner-img {
+		width: 100%;
+		height: auto;
+		display: block;
+		object-fit: cover;
+	  }
+	
+	  .banner-intro {
+		width: 100%;
+		padding: 20px;
+	  }
+	
+  
+	.banner-intro .banner-subtitle {
+	  font-size: 20px;
+	}
+  
+	.banner-desc {
+	  width: 100%;
+	  padding: 20px;
+	  margin: 0;
+	  bottom: 0;
+	}
+  
+	.services-list {
+	  padding: 0;
+	}
+  
+	.services .list-item {
+	  flex-direction: column;
+	  margin-bottom: 40px;
+	}
+  
+	.list-img,
+	.list-text {
+	  width: 100%;
+	  margin: 0;
+	}
+  
+	.list-item-reverse {
+	  flex-direction: column;
+	}
+  
+	.case-wrapper {
+	  flex-direction: column;
+	}
+  
+	.case-img,
+	.case-desc {
+	  width: 100%;
+	}
+  
+	.case-desc-top,
+	.case-desc-bottom {
+	  margin: 0;
+	  padding: 40px 20px;
+	}
+  
+	.list-show {
+	  flex-direction: column;
+	}
+  
+	.subscription-wrapper {
+	  flex-direction: column;
+	}
+  
+	.subscription-img,
+	.subscription-content {
+	  width: 100%;
+	  padding: 20px;
+	}
+  
+	.newsletter-block {
+	  width: 100%;
+	  padding: 20px;
+	}
+  
+	.newsletter-block h2 {
+	  font-size: 36px;
+	}
+  
+	.contact-list a {
+	  font-size: 16px;
+	}
+  
+	.link-text {
+	  font-size: 1.25rem;
+	}
+  
+	h2 {
+	  font-size: 36px;
+	}
+  
+	h3 {
+	  font-size: 22px;
+	}
+
+}
+	
+
+  
+  /* 平板（768px ~ 1023px） */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.banner-intro .banner-title {
+	  font-size: 64px;
+	}
+  
+	.banner-intro .banner-subtitle {
+	  font-size: 24px;
+	}
+  
+	.newsletter-block h2 {
+	  font-size: 48px;
+	}
+  
+	.case-desc-top,
+	.case-desc-bottom {
+	  padding: 60px 30px;
+	}
+  
+	.list-show {
+	  flex-direction: column;
+	}
+  
+	.services-list {
+	  padding: 0 40px;
+	}
+  }
+  
+  
+	
+/* ✅ 修正手機版橫向滾動與輪播箭頭定位問題 */
+
+
+
+  
+  /* 手機版設定 */
+  @media (max-width: 767px) {
+	.feature-wrapper {
+	  position: relative;
+	  overflow-x: hidden;
+	}
+  
+	.swiper,
+	.swiper-wrapper,
+	.feature-list {
+	  max-width: 100%;
+	  overflow-x: hidden;
+	}
+  
+	.slider-btn-wrapper {
+	  display: flex;
+	  justify-content: center;
+	  gap: 12px;
+	  margin-top: 16px;
+	  position: static;
+	}
+  
+	.slider-btn {
+	  width: 44px;
+	  height: 44px;
+	  font-size: 20px;
+	  background: #fff;
+	  color: #0027d5;
+	  border-radius: 50%;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+
+  
+	.blog-feature .slider-btn-prev,
+	.blog-feature .slider-btn-next {
+	  position: static !important;
+	  left: auto !important;
+	  right: auto !important;
+	  top: auto !important;
+	  transform: none !important;
+	  padding: 0;
+	}
+  }
+  

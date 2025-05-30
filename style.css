@@ -696,22 +696,18 @@ font-size: 24px;
 	}
   }
   
-/* 手機（小於768px） */
-@media (max-width: 767px) {
-	.banner {
-		flex-direction: column;
-	  }
-	
-	  .banner-img {
+@media (max-width: 768px) {
+
+	.banner-img {
+		padding: 0;
+	}
+	  .banner-img img {
 		width: 100%;
+		height: calc(100vh - 90px - 180px);
+		object-fit: cover; 
 	  }
+
 	
-	  .banner-img {
-		width: 100%;
-		height: auto;
-		display: block;
-		object-fit: cover;
-	  }
 	
 	  .banner-intro {
 		width: 100%;
@@ -835,10 +831,6 @@ font-size: 24px;
 	}
   }
   
-  
-	
-/* ✅ 修正手機版橫向滾動與輪播箭頭定位問題 */
-
 
 
   
